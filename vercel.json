@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    {
+      "source": "/codetiktok/",
+      "destination": "/codetiktok.txt"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/codetiktok.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain"
+        }
+      ]
+    }
+  ]
+}
