@@ -1,23 +1,23 @@
 {
-  "headers": [
+  "rewrites": [
     {
       "source": "/codetiktok",
+      "destination": "/codetiktok.txt"
+    },
+    {
+      "source": "/codetiktok/",
+      "destination": "/codetiktok.txt"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/codetiktok.txt",
       "headers": [
-        {
-          "key": "Content-Disposition",
-          "value": "attachment; filename=\"codetiktok.txt\""
-        },
         {
           "key": "Content-Type",
           "value": "text/plain"
         }
       ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/codetiktok",
-      "destination": "/codetiktok.txt"
     }
   ]
 }
